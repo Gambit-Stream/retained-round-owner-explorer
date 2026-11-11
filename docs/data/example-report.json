@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "ruleVersion": "2026-11-11.1",
+  "synthetic": true,
+  "input": {
+    "authenticity": "verified",
+    "mapping": "matched",
+    "originalHandler": "available",
+    "result": "unresolved",
+    "payload": "same",
+    "reviewer": "assigned"
+  },
+  "operator": "OP-41",
+  "provider": "P-41",
+  "round": "R-41",
+  "event": "E-41",
+  "originalHandler": "Gateway A",
+  "newRoundDefault": "Gateway B",
+  "mappingReference": "mapping-v7",
+  "receiptReference": "receipt-41",
+  "candidateOwner": "Gateway A",
+  "walletResult": "UNRESOLVED",
+  "reviewer": "Demo integration reviewer",
+  "status": "RECONCILE_ORIGINAL_RESULT",
+  "nextAction": "Reconcile the original event reference with the retained handler and ledger evidence. Keep the wallet result unresolved until supported.",
+  "gaps": [
+    "RESULT_UNRESOLVED"
+  ],
+  "walletEffectAuthorized": false,
+  "liveChecks": 0
+}

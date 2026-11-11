@@ -1,0 +1,160 @@
+[
+  {
+    "schemaVersion": 1,
+    "ruleVersion": "2026-11-11.1",
+    "synthetic": true,
+    "input": {
+      "authenticity": "verified",
+      "mapping": "matched",
+      "originalHandler": "available",
+      "result": "unresolved",
+      "payload": "same",
+      "reviewer": "assigned"
+    },
+    "operator": "OP-41",
+    "provider": "P-41",
+    "round": "R-41",
+    "event": "E-41",
+    "originalHandler": "Gateway A",
+    "newRoundDefault": "Gateway B",
+    "mappingReference": "mapping-v7",
+    "receiptReference": "receipt-41",
+    "candidateOwner": "Gateway A",
+    "walletResult": "UNRESOLVED",
+    "reviewer": "Demo integration reviewer",
+    "status": "RECONCILE_ORIGINAL_RESULT",
+    "nextAction": "Reconcile the original event reference with the retained handler and ledger evidence. Keep the wallet result unresolved until supported.",
+    "gaps": [
+      "RESULT_UNRESOLVED"
+    ],
+    "walletEffectAuthorized": false,
+    "liveChecks": 0
+  },
+  {
+    "schemaVersion": 1,
+    "ruleVersion": "2026-11-11.1",
+    "synthetic": true,
+    "input": {
+      "authenticity": "verified",
+      "mapping": "missing",
+      "originalHandler": "available",
+      "result": "unresolved",
+      "payload": "same",
+      "reviewer": "assigned"
+    },
+    "operator": "OP-41",
+    "provider": "P-41",
+    "round": "R-41",
+    "event": "E-41",
+    "originalHandler": "Gateway A",
+    "newRoundDefault": "Gateway B",
+    "mappingReference": "mapping-v7",
+    "receiptReference": "receipt-41",
+    "candidateOwner": null,
+    "walletResult": "UNRESOLVED",
+    "reviewer": "Demo integration reviewer",
+    "status": "HOLD_MAPPING",
+    "nextAction": "Locate a retained mapping for the exact operator, provider and round. Resolve its scope, validity and conflicting versions before selecting an owner.",
+    "gaps": [
+      "MAPPING_MISSING",
+      "RESULT_UNRESOLVED"
+    ],
+    "walletEffectAuthorized": false,
+    "liveChecks": 0
+  },
+  {
+    "schemaVersion": 1,
+    "ruleVersion": "2026-11-11.1",
+    "synthetic": true,
+    "input": {
+      "authenticity": "verified",
+      "mapping": "matched",
+      "originalHandler": "unavailable",
+      "result": "unresolved",
+      "payload": "same",
+      "reviewer": "assigned"
+    },
+    "operator": "OP-41",
+    "provider": "P-41",
+    "round": "R-41",
+    "event": "E-41",
+    "originalHandler": "Gateway A",
+    "newRoundDefault": "Gateway B",
+    "mappingReference": "mapping-v7",
+    "receiptReference": "receipt-41",
+    "candidateOwner": "Gateway A",
+    "walletResult": "UNRESOLVED",
+    "reviewer": "Demo integration reviewer",
+    "status": "HOLD_ORIGINAL_HANDLER",
+    "nextAction": "Restore access to the original handler or obtain an explicitly reviewed recovery path. Preserve its mapping and unresolved evidence.",
+    "gaps": [
+      "ORIGINAL_HANDLER_UNAVAILABLE",
+      "RESULT_UNRESOLVED"
+    ],
+    "walletEffectAuthorized": false,
+    "liveChecks": 0
+  },
+  {
+    "schemaVersion": 1,
+    "ruleVersion": "2026-11-11.1",
+    "synthetic": true,
+    "input": {
+      "authenticity": "verified",
+      "mapping": "matched",
+      "originalHandler": "available",
+      "result": "recorded",
+      "payload": "same",
+      "reviewer": "assigned"
+    },
+    "operator": "OP-41",
+    "provider": "P-41",
+    "round": "R-41",
+    "event": "E-41",
+    "originalHandler": "Gateway A",
+    "newRoundDefault": "Gateway B",
+    "mappingReference": "mapping-v7",
+    "receiptReference": "receipt-41",
+    "candidateOwner": "Gateway A",
+    "walletResult": "RECORDED_ASSUMPTION",
+    "reviewer": "Demo integration reviewer",
+    "status": "REVIEW_RECORDED_RESULT",
+    "nextAction": "Review the assumed recorded result against the original event and response contract. No wallet operation is authorized by this report.",
+    "gaps": [],
+    "walletEffectAuthorized": false,
+    "liveChecks": 0
+  },
+  {
+    "schemaVersion": 1,
+    "ruleVersion": "2026-11-11.1",
+    "synthetic": true,
+    "input": {
+      "authenticity": "verified",
+      "mapping": "wrong-operator",
+      "originalHandler": "available",
+      "result": "unresolved",
+      "payload": "changed",
+      "reviewer": "unassigned"
+    },
+    "operator": "OP-41",
+    "provider": "P-41",
+    "round": "R-41",
+    "event": "E-41",
+    "originalHandler": "Gateway A",
+    "newRoundDefault": "Gateway B",
+    "mappingReference": "mapping-v7",
+    "receiptReference": "receipt-41",
+    "candidateOwner": null,
+    "walletResult": "UNRESOLVED",
+    "reviewer": "UNASSIGNED",
+    "status": "HOLD_MAPPING",
+    "nextAction": "Locate a retained mapping for the exact operator, provider and round. Resolve its scope, validity and conflicting versions before selecting an owner.",
+    "gaps": [
+      "MAPPING_WRONG_OPERATOR",
+      "PAYLOAD_CHANGED",
+      "RESULT_UNRESOLVED",
+      "REVIEWER_UNASSIGNED"
+    ],
+    "walletEffectAuthorized": false,
+    "liveChecks": 0
+  }
+]

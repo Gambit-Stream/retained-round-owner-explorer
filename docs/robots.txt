@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gambit-stream.github.io/retained-round-owner-explorer/sitemap.xml

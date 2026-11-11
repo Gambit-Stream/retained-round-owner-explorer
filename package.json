@@ -1,0 +1,1 @@
+{"name":"retained-round-owner-explorer","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node --test test/explorer.test.mjs","verify":"node --test test/explorer.test.mjs"},"engines":{"node":">=23"}}
