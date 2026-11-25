@@ -1,0 +1,2 @@
+launch_ref,adapter_revision,game_ref,operator_session_alias,provider_session_ref,observed_boundary,error_category,unresolved_question,evidence_ref,owner
+G-31 (fictional),ADAPTER-G31/r2 (fictional),GAME-31 (fictional namespace),OP-SESSION-31 (fictional alias),UNKNOWN,Operator adapter timeout; provider response not collected (synthetic),TIMEOUT (synthetic),Was a provider session created for this attempted launch?,"NOT_COLLECTED; synthetic example, no execution",Integration support lead (proposed)
