@@ -1,0 +1,12 @@
+test_accepted_lost_reply_recovers_original_outcome_once (test_recovery.RecoveryContract.test_accepted_lost_reply_recovers_original_outcome_once) ... ok
+test_expired_session_is_denied (test_recovery.RecoveryContract.test_expired_session_is_denied) ... ok
+test_missing_journal_does_not_create_operation (test_recovery.RecoveryContract.test_missing_journal_does_not_create_operation) ... ok
+test_operation_key_rejects_different_intent (test_recovery.RecoveryContract.test_operation_key_rejects_different_intent) ... ok
+test_retained_rejection_survives_replenishment (test_recovery.RecoveryContract.test_retained_rejection_survives_replenishment) ... ok
+test_unavailable_lookup_remains_unknown (test_recovery.RecoveryContract.test_unavailable_lookup_remains_unknown) ... ok
+test_wrong_player_recovery_is_denied (test_recovery.RecoveryContract.test_wrong_player_recovery_is_denied) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK

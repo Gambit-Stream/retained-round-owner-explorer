@@ -1,0 +1,231 @@
+{
+  "schema": "wallet-recovery-provenance/1",
+  "prepared_on": "2026-11-26",
+  "scope": "Exact original code and synthetic fixture input snapshots. Source paths and SHA256 pin the packaged bytes; no current DEV page revision ID is claimed.",
+  "parents_live_verification": "Parent live verification retained by the publisher. A03 was additionally fetched anonymously HTTP 200 on 2026-11-26; its three Python code blocks matched retained files with at most optional trailing newline normalization.",
+  "cases": [
+    {
+      "case": "01-session",
+      "parent_id": "GS-DEV-20261024-A01",
+      "parent_article": "https://dev.to/gambit_stream/sportsbook-iframe-integration-test-reconnects-against-the-original-wallet-operation-2i82",
+      "source_snapshot": "outputs/devto/GS-DEV-20261024-A01/20261029T080841Z/fixture",
+      "files": [
+        {
+          "path": "cases/01-session/recovery.py",
+          "sha256": "87befc505b58e558602ab8482ab07fa3fee7990d3f477d0c312e5fe075b9d4f1",
+          "bytes": 3469,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "committed_retained_snapshot",
+            "commit": "0dda990e09080f482daa3eb3eabcd47c33648f8a",
+            "path": "outputs/devto/GS-DEV-20261024-A01/20261029T080841Z/fixture/recovery.py",
+            "byte_parity": true
+          }
+        },
+        {
+          "path": "cases/01-session/test_recovery.py",
+          "sha256": "31b0248d15f7fb7b11fa361ed6033bc0a0d6b905c82877af3456847ab853be8c",
+          "bytes": 3883,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "committed_retained_snapshot",
+            "commit": "0dda990e09080f482daa3eb3eabcd47c33648f8a",
+            "path": "outputs/devto/GS-DEV-20261024-A01/20261029T080841Z/fixture/test_recovery.py",
+            "byte_parity": true
+          }
+        },
+        {
+          "path": "cases/01-session/demo.py",
+          "sha256": "e894b6429a17b74787a99bea9f373ef46d2bd34965f4c5b0651d6412fff229a2",
+          "bytes": 1882,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "committed_retained_snapshot",
+            "commit": "0dda990e09080f482daa3eb3eabcd47c33648f8a",
+            "path": "outputs/devto/GS-DEV-20261024-A01/20261029T080841Z/fixture/demo.py",
+            "byte_parity": true
+          }
+        }
+      ]
+    },
+    {
+      "case": "02-route",
+      "parent_id": "GS-DEV-20261024-A02",
+      "parent_article": "https://dev.to/gambit_stream/casino-provider-replacement-route-late-settlements-to-the-original-round-10n6",
+      "source_snapshot": "outputs/devto/GS-DEV-20261024-A02/20261105T081314Z/fixture",
+      "files": [
+        {
+          "path": "cases/02-route/settlement.py",
+          "sha256": "72af934b0ba12b17bfbfb554baaac70d64de1a1bac9525c6ddf006a834f8d580",
+          "bytes": 3592,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "committed_retained_snapshot",
+            "commit": "0dda990e09080f482daa3eb3eabcd47c33648f8a",
+            "path": "outputs/devto/GS-DEV-20261024-A02/20261105T081314Z/fixture/settlement.py",
+            "byte_parity": true
+          }
+        },
+        {
+          "path": "cases/02-route/test_settlement.py",
+          "sha256": "df8d0bff3f57e95c6220f8f11621f449a688823fc67144ae1bb8f3bf2c154f92",
+          "bytes": 5660,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "committed_retained_snapshot",
+            "commit": "0dda990e09080f482daa3eb3eabcd47c33648f8a",
+            "path": "outputs/devto/GS-DEV-20261024-A02/20261105T081314Z/fixture/test_settlement.py",
+            "byte_parity": true
+          }
+        },
+        {
+          "path": "cases/02-route/demo.py",
+          "sha256": "ee6a2f8fa86f9c9aea78020c48029c29259da5a9446fb225ef39dcf93907a0f2",
+          "bytes": 2366,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "committed_retained_snapshot",
+            "commit": "0dda990e09080f482daa3eb3eabcd47c33648f8a",
+            "path": "outputs/devto/GS-DEV-20261024-A02/20261105T081314Z/fixture/demo.py",
+            "byte_parity": true
+          }
+        }
+      ]
+    },
+    {
+      "case": "03-export",
+      "parent_id": "GS-DEV-20261024-A03",
+      "parent_article": "https://dev.to/gambit_stream/pam-data-export-reconstruct-player-histories-with-16-tests-3im4",
+      "source_snapshot": "outputs/dev/GS-DEV-20261024-A03/20261112/fixture",
+      "files": [
+        {
+          "path": "cases/03-export/reader.py",
+          "sha256": "389c1710927ab333187246d258d01cab50dab9c5ee61ee054176b685a430b50b",
+          "bytes": 4989,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "published_article_code",
+            "article": "https://dev.to/gambit_stream/pam-data-export-reconstruct-player-histories-with-16-tests-3im4",
+            "observed_on": "2026-11-26",
+            "retained_source_snapshot": "outputs/dev/GS-DEV-20261024-A03/20261112/fixture/reader.py",
+            "published_code_byte_match_including_newline": true
+          }
+        },
+        {
+          "path": "cases/03-export/test_reader.py",
+          "sha256": "1f2f6d8db9fd3cf633040ae3fb8e9852933afe8f43a9e52bf764025872cb0256",
+          "bytes": 4315,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "published_article_code",
+            "article": "https://dev.to/gambit_stream/pam-data-export-reconstruct-player-histories-with-16-tests-3im4",
+            "observed_on": "2026-11-26",
+            "retained_source_snapshot": "outputs/dev/GS-DEV-20261024-A03/20261112/fixture/test_reader.py",
+            "published_code_byte_match_including_newline": true
+          }
+        },
+        {
+          "path": "cases/03-export/fixture.py",
+          "sha256": "175f7acac7e9627f73823beb482aef138cb06bd2f525829aefd63765be71191b",
+          "bytes": 2359,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "published_article_code",
+            "article": "https://dev.to/gambit_stream/pam-data-export-reconstruct-player-histories-with-16-tests-3im4",
+            "observed_on": "2026-11-26",
+            "retained_source_snapshot": "outputs/dev/GS-DEV-20261024-A03/20261112/fixture/fixture.py",
+            "published_code_byte_match_including_newline": true
+          }
+        },
+        {
+          "path": "cases/03-export/export/accounts.csv",
+          "sha256": "eaf6618f07bb59efa88d4b26f9a23c66949bdc5f562e3e3aa4168347f6e6acd2",
+          "bytes": 93,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "retained_synthetic_input",
+            "article": "https://dev.to/gambit_stream/pam-data-export-reconstruct-player-histories-with-16-tests-3im4",
+            "published_code_match_except_optional_trailing_newline": null,
+            "observed_on": "2026-11-26",
+            "retained_source_snapshot": "outputs/dev/GS-DEV-20261024-A03/20261112/fixture/export/accounts.csv"
+          }
+        },
+        {
+          "path": "cases/03-export/export/events.csv",
+          "sha256": "4603be4c8aabfe439569ae52508e54c590218966579ec9027ba062e336039cbf",
+          "bytes": 247,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "retained_synthetic_input",
+            "article": "https://dev.to/gambit_stream/pam-data-export-reconstruct-player-histories-with-16-tests-3im4",
+            "published_code_match_except_optional_trailing_newline": null,
+            "observed_on": "2026-11-26",
+            "retained_source_snapshot": "outputs/dev/GS-DEV-20261024-A03/20261112/fixture/export/events.csv"
+          }
+        },
+        {
+          "path": "cases/03-export/export/exceptions.csv",
+          "sha256": "1159596fbea1d9fb23b56136e219887d2401911fdb0d863c2b95fc757f04c779",
+          "bytes": 83,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "retained_synthetic_input",
+            "article": "https://dev.to/gambit_stream/pam-data-export-reconstruct-player-histories-with-16-tests-3im4",
+            "published_code_match_except_optional_trailing_newline": null,
+            "observed_on": "2026-11-26",
+            "retained_source_snapshot": "outputs/dev/GS-DEV-20261024-A03/20261112/fixture/export/exceptions.csv"
+          }
+        },
+        {
+          "path": "cases/03-export/export/manifest.json",
+          "sha256": "f93aa306041c29889ce50c815401b4e871a70391f654f3449a7988d0e21a3e3d",
+          "bytes": 802,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "retained_synthetic_input",
+            "article": "https://dev.to/gambit_stream/pam-data-export-reconstruct-player-histories-with-16-tests-3im4",
+            "published_code_match_except_optional_trailing_newline": null,
+            "observed_on": "2026-11-26",
+            "retained_source_snapshot": "outputs/dev/GS-DEV-20261024-A03/20261112/fixture/export/manifest.json"
+          }
+        }
+      ]
+    },
+    {
+      "case": "04-decision",
+      "parent_id": "GS-DEV-20261024-A04",
+      "parent_article": "https://dev.to/gambit_stream/sportsbook-cashout-recover-the-decision-after-the-client-disconnects-ael",
+      "source_snapshot": "outputs/devto/GS-DEV-20261024-A04/20261126/fixture",
+      "files": [
+        {
+          "path": "cases/04-decision/cashout.py",
+          "sha256": "b37708cd52691a4b902bb86d356b508d7f449053ab15ce047dfa2a00b96fef92",
+          "bytes": 4877,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "committed_retained_snapshot",
+            "commit": "0dda990e09080f482daa3eb3eabcd47c33648f8a",
+            "path": "planning/revisions/20261126-dev-medium-published/GS-DEV-20261024-A04/fixture/cashout.py",
+            "byte_parity": true
+          }
+        },
+        {
+          "path": "cases/04-decision/test_cashout.py",
+          "sha256": "9a0dac0a1d8134b2d9d30ccdfd03525d6dd9f42175b31ee6f97d17dc5e35e970",
+          "bytes": 5134,
+          "snapshot_byte_parity": true,
+          "authoritative_source": {
+            "kind": "committed_retained_snapshot",
+            "commit": "0dda990e09080f482daa3eb3eabcd47c33648f8a",
+            "path": "planning/revisions/20261126-dev-medium-published/GS-DEV-20261024-A04/fixture/test_cashout.py",
+            "byte_parity": true
+          }
+        }
+      ]
+    }
+  ],
+  "source_version_context": {
+    "authoritative_checked_commit": "0dda990e09080f482daa3eb3eabcd47c33648f8a",
+    "description": "Retained internal source archive commit; this reference is not a public DEV page revision."
+  }
+}

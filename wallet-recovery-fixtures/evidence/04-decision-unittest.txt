@@ -1,0 +1,19 @@
+test_absent_and_wrong_account_lookup_are_unknown (test_cashout.RecoveryTests.test_absent_and_wrong_account_lookup_are_unknown) ... ok
+test_expiry_after_acceptance_does_not_reject_recovery (test_cashout.RecoveryTests.test_expiry_after_acceptance_does_not_reject_recovery) ... ok
+test_expiry_boundary_rejects_and_one_tick_before_accepts (test_cashout.RecoveryTests.test_expiry_boundary_rejects_and_one_tick_before_accepts) ... ok
+test_interruption_between_decision_and_effect_rolls_back (test_cashout.RecoveryTests.test_interruption_between_decision_and_effect_rolls_back) ... ok
+test_known_rejection_survives_new_offer (test_cashout.RecoveryTests.test_known_rejection_survives_new_offer) ... ok
+test_lost_reply_recovers_original_revision_after_new_offer (test_cashout.RecoveryTests.test_lost_reply_recovers_original_revision_after_new_offer) ... ok
+test_missing_current_offer_does_not_erase_acceptance (test_cashout.RecoveryTests.test_missing_current_offer_does_not_erase_acceptance) ... ok
+test_new_key_after_acceptance_rejected_without_second_effect (test_cashout.RecoveryTests.test_new_key_after_acceptance_rejected_without_second_effect) ... ok
+test_no_offer_is_rejected_without_effect (test_cashout.RecoveryTests.test_no_offer_is_rejected_without_effect) ... ok
+test_reopen_database_preserves_accepted_result_after_revision (test_cashout.RecoveryTests.test_reopen_database_preserves_accepted_result_after_revision) ... ok
+test_same_key_changed_revision_conflicts_without_effect (test_cashout.RecoveryTests.test_same_key_changed_revision_conflicts_without_effect) ... ok
+test_same_key_same_payload_replays_without_second_effect (test_cashout.RecoveryTests.test_same_key_same_payload_replays_without_second_effect) ... ok
+test_stale_revision_is_rejected_without_effect (test_cashout.RecoveryTests.test_stale_revision_is_rejected_without_effect) ... ok
+test_unavailable_lookup_is_unknown_and_read_only (test_cashout.RecoveryTests.test_unavailable_lookup_is_unknown_and_read_only) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.097s
+
+OK

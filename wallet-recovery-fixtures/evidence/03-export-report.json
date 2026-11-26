@@ -1,0 +1,44 @@
+{
+  "exceptions": [
+    {
+      "brand": "B-A",
+      "currency": "EUR",
+      "event": "E-301",
+      "exception": "X-301",
+      "player": "P-301",
+      "state": "UNRESOLVED"
+    }
+  ],
+  "findings": [],
+  "histories": [
+    {
+      "account": [
+        "B-A",
+        "P-301",
+        "EUR"
+      ],
+      "computed": 10300,
+      "declared": 10300,
+      "events": [
+        "E-301",
+        "E-303"
+      ]
+    },
+    {
+      "account": [
+        "B-B",
+        "P-301",
+        "EUR"
+      ],
+      "computed": 20300,
+      "declared": 20300,
+      "events": [
+        "E-302",
+        "E-304"
+      ]
+    }
+  ],
+  "retry_authorized": false,
+  "source_authenticated": false,
+  "status": "READABLE_WITH_UNRESOLVED"
+}

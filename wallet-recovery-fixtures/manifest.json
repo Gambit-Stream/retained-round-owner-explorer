@@ -1,0 +1,140 @@
+{
+  "schema": "wallet-recovery-package/1",
+  "release_directory": "wallet-recovery-fixtures",
+  "prepared_on": "2026-11-26",
+  "proposed_tag": "wallet-recovery-fixtures-v1.0.0",
+  "license": "Inherited existing repository MIT, copyright 2026 Gambit Stream; official logo excluded",
+  "self_hash_rule": "This manifest lists every other file in this directory. It excludes itself to avoid a recursive hash.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5079,
+      "sha256": "cf0ccfdfa37524752b792dc1fd80c3bad3ab4b50f381fa1b46d315efdf6ab925"
+    },
+    {
+      "path": "cases/01-session/demo.py",
+      "bytes": 1882,
+      "sha256": "e894b6429a17b74787a99bea9f373ef46d2bd34965f4c5b0651d6412fff229a2"
+    },
+    {
+      "path": "cases/01-session/recovery.py",
+      "bytes": 3469,
+      "sha256": "87befc505b58e558602ab8482ab07fa3fee7990d3f477d0c312e5fe075b9d4f1"
+    },
+    {
+      "path": "cases/01-session/test_recovery.py",
+      "bytes": 3883,
+      "sha256": "31b0248d15f7fb7b11fa361ed6033bc0a0d6b905c82877af3456847ab853be8c"
+    },
+    {
+      "path": "cases/02-route/demo.py",
+      "bytes": 2366,
+      "sha256": "ee6a2f8fa86f9c9aea78020c48029c29259da5a9446fb225ef39dcf93907a0f2"
+    },
+    {
+      "path": "cases/02-route/settlement.py",
+      "bytes": 3592,
+      "sha256": "72af934b0ba12b17bfbfb554baaac70d64de1a1bac9525c6ddf006a834f8d580"
+    },
+    {
+      "path": "cases/02-route/test_settlement.py",
+      "bytes": 5660,
+      "sha256": "df8d0bff3f57e95c6220f8f11621f449a688823fc67144ae1bb8f3bf2c154f92"
+    },
+    {
+      "path": "cases/03-export/export/accounts.csv",
+      "bytes": 93,
+      "sha256": "eaf6618f07bb59efa88d4b26f9a23c66949bdc5f562e3e3aa4168347f6e6acd2"
+    },
+    {
+      "path": "cases/03-export/export/events.csv",
+      "bytes": 247,
+      "sha256": "4603be4c8aabfe439569ae52508e54c590218966579ec9027ba062e336039cbf"
+    },
+    {
+      "path": "cases/03-export/export/exceptions.csv",
+      "bytes": 83,
+      "sha256": "1159596fbea1d9fb23b56136e219887d2401911fdb0d863c2b95fc757f04c779"
+    },
+    {
+      "path": "cases/03-export/fixture.py",
+      "bytes": 2359,
+      "sha256": "175f7acac7e9627f73823beb482aef138cb06bd2f525829aefd63765be71191b"
+    },
+    {
+      "path": "cases/03-export/reader.py",
+      "bytes": 4989,
+      "sha256": "389c1710927ab333187246d258d01cab50dab9c5ee61ee054176b685a430b50b"
+    },
+    {
+      "path": "cases/03-export/test_reader.py",
+      "bytes": 4315,
+      "sha256": "1f2f6d8db9fd3cf633040ae3fb8e9852933afe8f43a9e52bf764025872cb0256"
+    },
+    {
+      "path": "cases/04-decision/cashout.py",
+      "bytes": 4877,
+      "sha256": "b37708cd52691a4b902bb86d356b508d7f449053ab15ce047dfa2a00b96fef92"
+    },
+    {
+      "path": "cases/04-decision/test_cashout.py",
+      "bytes": 5134,
+      "sha256": "9a0dac0a1d8134b2d9d30ccdfd03525d6dd9f42175b31ee6f97d17dc5e35e970"
+    },
+    {
+      "path": "evidence/01-session-demo.json",
+      "bytes": 5040,
+      "sha256": "8039d2787432440df3eca677d8f3b47e36341998e84873722838e686d6df14aa"
+    },
+    {
+      "path": "evidence/01-session-unittest.txt",
+      "bytes": 982,
+      "sha256": "66dbb993580b4485a13c676164114840916407e254e832c15cdb006c387c1f47"
+    },
+    {
+      "path": "evidence/02-route-demo.json",
+      "bytes": 8463,
+      "sha256": "60bc8015bb7b1c65423fc82afea431d43eca36bc59a90f2b23d22600a1cf153e"
+    },
+    {
+      "path": "evidence/02-route-unittest.txt",
+      "bytes": 1338,
+      "sha256": "bf87d5fdc8366326edea328bdd473f4592e5a78f884328bfae26301674ad23bb"
+    },
+    {
+      "path": "evidence/03-export-report.json",
+      "bytes": 723,
+      "sha256": "f34eb0f3885e4ba2650095d825c00ad740fd1d39ca3d4017e34b3522e0615cbf"
+    },
+    {
+      "path": "evidence/03-export-unittest.txt",
+      "bytes": 1385,
+      "sha256": "c9960ea675112320ccc424c1c89dc19c350eab119b2d9394b90830f4078f53fa"
+    },
+    {
+      "path": "evidence/04-decision-unittest.txt",
+      "bytes": 2087,
+      "sha256": "1d450319ec2e7a949974dbac5aec4a42fda3ce7ed492d8ca09cc1a720541f683"
+    },
+    {
+      "path": "expected-output.txt",
+      "bytes": 131,
+      "sha256": "ce202bbd0a2853ec162c30bb7bb08588593e1efc22b6e0d007ef862817e4d4cf"
+    },
+    {
+      "path": "expected-results.json",
+      "bytes": 6473,
+      "sha256": "e1d98c781cb89961c45e663e2133df6e09389e7cebf411c1d1c403bdada340e8"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 10821,
+      "sha256": "5bf136a69da5da2adc047f5157fe5b713f03846d32bbd12915e886c34a8a2aca"
+    },
+    {
+      "path": "run.py",
+      "bytes": 2427,
+      "sha256": "32e75036737cc5e8d2232786c00f07c43892222ae4cb6960a515bfc6050e74e1"
+    }
+  ]
+}

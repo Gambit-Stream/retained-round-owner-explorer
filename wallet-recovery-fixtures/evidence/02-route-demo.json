@@ -1,0 +1,344 @@
+{
+  "synthetic": true,
+  "ownership_comparison": [
+    {
+      "variant": "BuggyRouter",
+      "original_owner": {
+        "local_round_id": "local-1",
+        "provider": "A",
+        "provider_round_id": "round-17",
+        "player": "alice",
+        "currency": "EUR",
+        "route_revision": 1
+      },
+      "route_journal": [
+        [
+          1,
+          "A"
+        ],
+        [
+          2,
+          "B"
+        ]
+      ],
+      "steps": [
+        {
+          "action": "late_A",
+          "disposition": "QUARANTINED",
+          "effect_count": 0,
+          "total_minor": 0,
+          "held": []
+        },
+        {
+          "action": "wrong_B_label",
+          "disposition": "APPLIED",
+          "effect_count": 1,
+          "total_minor": 500,
+          "held": []
+        }
+      ],
+      "credit_effect_journal": [
+        {
+          "owner": {
+            "local_round_id": "local-1",
+            "provider": "A",
+            "provider_round_id": "round-17",
+            "player": "alice",
+            "currency": "EUR",
+            "route_revision": 1
+          },
+          "settlement": {
+            "provider": "B",
+            "provider_round_id": "round-17",
+            "local_round_id": "local-1",
+            "event_id": "event-1",
+            "player": "alice",
+            "currency": "EUR",
+            "amount_minor": 500
+          }
+        }
+      ],
+      "callback_journal": [
+        {
+          "settlement": {
+            "provider": "A",
+            "provider_round_id": "round-17",
+            "local_round_id": "local-1",
+            "event_id": "event-1",
+            "player": "alice",
+            "currency": "EUR",
+            "amount_minor": 500
+          },
+          "disposition": "QUARANTINED"
+        },
+        {
+          "settlement": {
+            "provider": "B",
+            "provider_round_id": "round-17",
+            "local_round_id": "local-1",
+            "event_id": "event-1",
+            "player": "alice",
+            "currency": "EUR",
+            "amount_minor": 500
+          },
+          "disposition": "APPLIED"
+        }
+      ]
+    },
+    {
+      "variant": "Router",
+      "original_owner": {
+        "local_round_id": "local-1",
+        "provider": "A",
+        "provider_round_id": "round-17",
+        "player": "alice",
+        "currency": "EUR",
+        "route_revision": 1
+      },
+      "route_journal": [
+        [
+          1,
+          "A"
+        ],
+        [
+          2,
+          "B"
+        ]
+      ],
+      "steps": [
+        {
+          "action": "late_A",
+          "disposition": "APPLIED",
+          "effect_count": 1,
+          "total_minor": 500,
+          "held": []
+        },
+        {
+          "action": "wrong_B_label",
+          "disposition": "QUARANTINED",
+          "effect_count": 1,
+          "total_minor": 500,
+          "held": []
+        }
+      ],
+      "credit_effect_journal": [
+        {
+          "owner": {
+            "local_round_id": "local-1",
+            "provider": "A",
+            "provider_round_id": "round-17",
+            "player": "alice",
+            "currency": "EUR",
+            "route_revision": 1
+          },
+          "settlement": {
+            "provider": "A",
+            "provider_round_id": "round-17",
+            "local_round_id": "local-1",
+            "event_id": "event-1",
+            "player": "alice",
+            "currency": "EUR",
+            "amount_minor": 500
+          }
+        }
+      ],
+      "callback_journal": [
+        {
+          "settlement": {
+            "provider": "A",
+            "provider_round_id": "round-17",
+            "local_round_id": "local-1",
+            "event_id": "event-1",
+            "player": "alice",
+            "currency": "EUR",
+            "amount_minor": 500
+          },
+          "disposition": "APPLIED"
+        },
+        {
+          "settlement": {
+            "provider": "B",
+            "provider_round_id": "round-17",
+            "local_round_id": "local-1",
+            "event_id": "event-1",
+            "player": "alice",
+            "currency": "EUR",
+            "amount_minor": 500
+          },
+          "disposition": "QUARANTINED"
+        }
+      ]
+    }
+  ],
+  "explicit_recovery": {
+    "variant": "Router",
+    "original_owner": {
+      "local_round_id": "local-1",
+      "provider": "A",
+      "provider_round_id": "round-17",
+      "player": "alice",
+      "currency": "EUR",
+      "route_revision": 1
+    },
+    "route_journal": [
+      [
+        1,
+        "A"
+      ],
+      [
+        2,
+        "B"
+      ]
+    ],
+    "steps": [
+      {
+        "action": "A_unavailable",
+        "disposition": "UNRESOLVED_OLD_ROUTE",
+        "effect_count": 0,
+        "total_minor": 0,
+        "held": [
+          {
+            "provider": "A",
+            "provider_round_id": "round-17",
+            "local_round_id": "local-1",
+            "event_id": "event-1",
+            "player": "alice",
+            "currency": "EUR",
+            "amount_minor": 500
+          }
+        ]
+      },
+      {
+        "action": "held_redelivery",
+        "disposition": "UNRESOLVED_OLD_ROUTE",
+        "effect_count": 0,
+        "total_minor": 0,
+        "held": [
+          {
+            "provider": "A",
+            "provider_round_id": "round-17",
+            "local_round_id": "local-1",
+            "event_id": "event-1",
+            "player": "alice",
+            "currency": "EUR",
+            "amount_minor": 500
+          }
+        ]
+      },
+      {
+        "action": "A_available_redelivery",
+        "disposition": "UNRESOLVED_OLD_ROUTE",
+        "effect_count": 0,
+        "total_minor": 0,
+        "held": [
+          {
+            "provider": "A",
+            "provider_round_id": "round-17",
+            "local_round_id": "local-1",
+            "event_id": "event-1",
+            "player": "alice",
+            "currency": "EUR",
+            "amount_minor": 500
+          }
+        ]
+      },
+      {
+        "action": "explicit_retry_A_event_1",
+        "disposition": "APPLIED",
+        "effect_count": 1,
+        "total_minor": 500,
+        "held": []
+      },
+      {
+        "action": "redelivery_after_retry",
+        "disposition": "DUPLICATE",
+        "effect_count": 1,
+        "total_minor": 500,
+        "held": []
+      }
+    ],
+    "credit_effect_journal": [
+      {
+        "owner": {
+          "local_round_id": "local-1",
+          "provider": "A",
+          "provider_round_id": "round-17",
+          "player": "alice",
+          "currency": "EUR",
+          "route_revision": 1
+        },
+        "settlement": {
+          "provider": "A",
+          "provider_round_id": "round-17",
+          "local_round_id": "local-1",
+          "event_id": "event-1",
+          "player": "alice",
+          "currency": "EUR",
+          "amount_minor": 500
+        }
+      }
+    ],
+    "callback_journal": [
+      {
+        "settlement": {
+          "provider": "A",
+          "provider_round_id": "round-17",
+          "local_round_id": "local-1",
+          "event_id": "event-1",
+          "player": "alice",
+          "currency": "EUR",
+          "amount_minor": 500
+        },
+        "disposition": "UNRESOLVED_OLD_ROUTE"
+      },
+      {
+        "settlement": {
+          "provider": "A",
+          "provider_round_id": "round-17",
+          "local_round_id": "local-1",
+          "event_id": "event-1",
+          "player": "alice",
+          "currency": "EUR",
+          "amount_minor": 500
+        },
+        "disposition": "UNRESOLVED_OLD_ROUTE"
+      },
+      {
+        "settlement": {
+          "provider": "A",
+          "provider_round_id": "round-17",
+          "local_round_id": "local-1",
+          "event_id": "event-1",
+          "player": "alice",
+          "currency": "EUR",
+          "amount_minor": 500
+        },
+        "disposition": "UNRESOLVED_OLD_ROUTE"
+      },
+      {
+        "settlement": {
+          "provider": "A",
+          "provider_round_id": "round-17",
+          "local_round_id": "local-1",
+          "event_id": "event-1",
+          "player": "alice",
+          "currency": "EUR",
+          "amount_minor": 500
+        },
+        "disposition": "APPLIED"
+      },
+      {
+        "settlement": {
+          "provider": "A",
+          "provider_round_id": "round-17",
+          "local_round_id": "local-1",
+          "event_id": "event-1",
+          "player": "alice",
+          "currency": "EUR",
+          "amount_minor": 500
+        },
+        "disposition": "DUPLICATE"
+      }
+    ]
+  }
+}

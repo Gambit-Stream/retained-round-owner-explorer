@@ -1,0 +1,209 @@
+{
+  "synthetic": true,
+  "runs": [
+    {
+      "variant": "BuggyFrame",
+      "initial_balance": 1000,
+      "steps": [
+        {
+          "event": "initial_session",
+          "token": "session-1"
+        },
+        {
+          "event": "lost_reply",
+          "frame_result": "UNKNOWN",
+          "retained": {
+            "operation_id": "operation-1",
+            "status": "ACCEPTED",
+            "response": "accepted:operation-1"
+          },
+          "balance": 700,
+          "effects": 1
+        },
+        {
+          "event": "new_session",
+          "token": "session-2"
+        },
+        {
+          "event": "old_session_lookup",
+          "error": "SessionExpired"
+        },
+        {
+          "event": "reconnect",
+          "result": {
+            "operation_id": "session-2:replacement",
+            "status": "ACCEPTED",
+            "response": "accepted:session-2:replacement"
+          },
+          "balance": 400,
+          "effects": 2
+        },
+        {
+          "event": "lookup_original",
+          "result": {
+            "operation_id": "operation-1",
+            "status": "ACCEPTED",
+            "response": "accepted:operation-1"
+          },
+          "balance": 400,
+          "effects": 2
+        }
+      ]
+    },
+    {
+      "variant": "Frame",
+      "initial_balance": 1000,
+      "steps": [
+        {
+          "event": "initial_session",
+          "token": "session-1"
+        },
+        {
+          "event": "lost_reply",
+          "frame_result": "UNKNOWN",
+          "retained": {
+            "operation_id": "operation-1",
+            "status": "ACCEPTED",
+            "response": "accepted:operation-1"
+          },
+          "balance": 700,
+          "effects": 1
+        },
+        {
+          "event": "new_session",
+          "token": "session-2"
+        },
+        {
+          "event": "old_session_lookup",
+          "error": "SessionExpired"
+        },
+        {
+          "event": "reconnect",
+          "result": {
+            "operation_id": "operation-1",
+            "status": "ACCEPTED",
+            "response": "accepted:operation-1"
+          },
+          "balance": 700,
+          "effects": 1
+        },
+        {
+          "event": "lookup_original",
+          "result": {
+            "operation_id": "operation-1",
+            "status": "ACCEPTED",
+            "response": "accepted:operation-1"
+          },
+          "balance": 700,
+          "effects": 1
+        }
+      ]
+    },
+    {
+      "variant": "BuggyFrame",
+      "initial_balance": 100,
+      "steps": [
+        {
+          "event": "initial_session",
+          "token": "session-1"
+        },
+        {
+          "event": "lost_reply",
+          "frame_result": "UNKNOWN",
+          "retained": {
+            "operation_id": "operation-1",
+            "status": "REJECTED",
+            "response": "rejected:operation-1"
+          },
+          "balance": 100,
+          "effects": 0
+        },
+        {
+          "event": "new_session",
+          "token": "session-2"
+        },
+        {
+          "event": "old_session_lookup",
+          "error": "SessionExpired"
+        },
+        {
+          "event": "replenished",
+          "balance": 1000
+        },
+        {
+          "event": "reconnect",
+          "result": {
+            "operation_id": "session-2:replacement",
+            "status": "ACCEPTED",
+            "response": "accepted:session-2:replacement"
+          },
+          "balance": 700,
+          "effects": 1
+        },
+        {
+          "event": "lookup_original",
+          "result": {
+            "operation_id": "operation-1",
+            "status": "REJECTED",
+            "response": "rejected:operation-1"
+          },
+          "balance": 700,
+          "effects": 1
+        }
+      ]
+    },
+    {
+      "variant": "Frame",
+      "initial_balance": 100,
+      "steps": [
+        {
+          "event": "initial_session",
+          "token": "session-1"
+        },
+        {
+          "event": "lost_reply",
+          "frame_result": "UNKNOWN",
+          "retained": {
+            "operation_id": "operation-1",
+            "status": "REJECTED",
+            "response": "rejected:operation-1"
+          },
+          "balance": 100,
+          "effects": 0
+        },
+        {
+          "event": "new_session",
+          "token": "session-2"
+        },
+        {
+          "event": "old_session_lookup",
+          "error": "SessionExpired"
+        },
+        {
+          "event": "replenished",
+          "balance": 1000
+        },
+        {
+          "event": "reconnect",
+          "result": {
+            "operation_id": "operation-1",
+            "status": "REJECTED",
+            "response": "rejected:operation-1"
+          },
+          "balance": 1000,
+          "effects": 0
+        },
+        {
+          "event": "lookup_original",
+          "result": {
+            "operation_id": "operation-1",
+            "status": "REJECTED",
+            "response": "rejected:operation-1"
+          },
+          "balance": 1000,
+          "effects": 0
+        }
+      ]
+    }
+  ]
+}

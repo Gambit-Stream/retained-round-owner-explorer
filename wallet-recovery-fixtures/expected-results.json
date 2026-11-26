@@ -1,0 +1,159 @@
+{
+  "schema": "wallet-recovery-results/1",
+  "executed_at": "2026-11-26T07:05:30.907721+00:00",
+  "runtime": {
+    "python": "3.14.7",
+    "implementation": "CPython",
+    "system": "Darwin",
+    "machine": "arm64",
+    "sqlite": "3.53.4"
+  },
+  "all_passed": true,
+  "total_tests": 46,
+  "cases": [
+    {
+      "case": "01-session",
+      "subprocess_exit": 0,
+      "tests": 7,
+      "expected_tests": 7,
+      "all_test_methods_passed": true,
+      "selectors": {
+        "FRAME_VARIANT": "Frame"
+      },
+      "command": [
+        "python3",
+        "-E",
+        "-s",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_recovery"
+      ],
+      "working_directory": "fresh temporary copy of cases/01-session",
+      "test_ids": [
+        "test_recovery.RecoveryContract.test_accepted_lost_reply_recovers_original_outcome_once",
+        "test_recovery.RecoveryContract.test_expired_session_is_denied",
+        "test_recovery.RecoveryContract.test_missing_journal_does_not_create_operation",
+        "test_recovery.RecoveryContract.test_operation_key_rejects_different_intent",
+        "test_recovery.RecoveryContract.test_retained_rejection_survives_replenishment",
+        "test_recovery.RecoveryContract.test_unavailable_lookup_remains_unknown",
+        "test_recovery.RecoveryContract.test_wrong_player_recovery_is_denied"
+      ],
+      "log": "evidence/01-session-unittest.txt",
+      "demo_exit": 0
+    },
+    {
+      "case": "02-route",
+      "subprocess_exit": 0,
+      "tests": 9,
+      "expected_tests": 9,
+      "all_test_methods_passed": true,
+      "selectors": {
+        "MODEL_VARIANT": "Router"
+      },
+      "command": [
+        "python3",
+        "-E",
+        "-s",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_settlement"
+      ],
+      "working_directory": "fresh temporary copy of cases/02-route",
+      "test_ids": [
+        "test_settlement.SettlementContract.test_B_label_against_old_A_round_is_quarantined",
+        "test_settlement.SettlementContract.test_changed_amount_conflicts_and_retains_first_meaning",
+        "test_settlement.SettlementContract.test_duplicate_once_but_distinct_event_adds_credit",
+        "test_settlement.SettlementContract.test_new_round_uses_B_and_provider_scoped_ids_coexist",
+        "test_settlement.SettlementContract.test_old_event_after_switch_credits_retained_owner",
+        "test_settlement.SettlementContract.test_unavailable_old_route_holds_until_explicit_retry",
+        "test_settlement.SettlementContract.test_unknown_local_round_is_quarantined",
+        "test_settlement.SettlementContract.test_wrong_currency_is_quarantined",
+        "test_settlement.SettlementContract.test_wrong_player_is_quarantined"
+      ],
+      "log": "evidence/02-route-unittest.txt",
+      "demo_exit": 0
+    },
+    {
+      "case": "03-export",
+      "subprocess_exit": 0,
+      "tests": 16,
+      "expected_tests": 16,
+      "all_test_methods_passed": true,
+      "selectors": {},
+      "command": [
+        "python3",
+        "-E",
+        "-s",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_reader"
+      ],
+      "working_directory": "fresh temporary copy of cases/03-export",
+      "test_ids": [
+        "test_reader.ExportTests.test_balance_mismatch",
+        "test_reader.ExportTests.test_clean_matches_handwritten_oracle",
+        "test_reader.ExportTests.test_decimal_amount",
+        "test_reader.ExportTests.test_duplicate_account",
+        "test_reader.ExportTests.test_duplicate_event",
+        "test_reader.ExportTests.test_duplicate_exception",
+        "test_reader.ExportTests.test_equal_totals_wrong_owners",
+        "test_reader.ExportTests.test_exception_points_to_other_owner",
+        "test_reader.ExportTests.test_hash_mismatch",
+        "test_reader.ExportTests.test_missing_event",
+        "test_reader.ExportTests.test_missing_file",
+        "test_reader.ExportTests.test_naive_time",
+        "test_reader.ExportTests.test_orphan_event",
+        "test_reader.ExportTests.test_orphan_exception_stays_visible",
+        "test_reader.ExportTests.test_row_count",
+        "test_reader.ExportTests.test_schema_mismatch"
+      ],
+      "log": "evidence/03-export-unittest.txt",
+      "export_reader_exit": 0,
+      "export_reader_status": "READABLE_WITH_UNRESOLVED"
+    },
+    {
+      "case": "04-decision",
+      "subprocess_exit": 0,
+      "tests": 14,
+      "expected_tests": 14,
+      "all_test_methods_passed": true,
+      "selectors": {},
+      "command": [
+        "python3",
+        "-E",
+        "-s",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_cashout"
+      ],
+      "working_directory": "fresh temporary copy of cases/04-decision",
+      "test_ids": [
+        "test_cashout.RecoveryTests.test_absent_and_wrong_account_lookup_are_unknown",
+        "test_cashout.RecoveryTests.test_expiry_after_acceptance_does_not_reject_recovery",
+        "test_cashout.RecoveryTests.test_expiry_boundary_rejects_and_one_tick_before_accepts",
+        "test_cashout.RecoveryTests.test_interruption_between_decision_and_effect_rolls_back",
+        "test_cashout.RecoveryTests.test_known_rejection_survives_new_offer",
+        "test_cashout.RecoveryTests.test_lost_reply_recovers_original_revision_after_new_offer",
+        "test_cashout.RecoveryTests.test_missing_current_offer_does_not_erase_acceptance",
+        "test_cashout.RecoveryTests.test_new_key_after_acceptance_rejected_without_second_effect",
+        "test_cashout.RecoveryTests.test_no_offer_is_rejected_without_effect",
+        "test_cashout.RecoveryTests.test_reopen_database_preserves_accepted_result_after_revision",
+        "test_cashout.RecoveryTests.test_same_key_changed_revision_conflicts_without_effect",
+        "test_cashout.RecoveryTests.test_same_key_same_payload_replays_without_second_effect",
+        "test_cashout.RecoveryTests.test_stale_revision_is_rejected_without_effect",
+        "test_cashout.RecoveryTests.test_unavailable_lookup_is_unknown_and_read_only"
+      ],
+      "log": "evidence/04-decision-unittest.txt"
+    }
+  ],
+  "comparison_rule": "Expected counts, subprocess exit status and named passing methods are stable acceptance criteria. unittest duration and host paths are informational; do not byte-compare test logs. expected-output.txt is stable runner stdout.",
+  "source_mutation": "All commands executed in fresh temporary copies; original snapshots and package cases left unchanged."
+}

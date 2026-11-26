@@ -1,0 +1,14 @@
+test_B_label_against_old_A_round_is_quarantined (test_settlement.SettlementContract.test_B_label_against_old_A_round_is_quarantined) ... ok
+test_changed_amount_conflicts_and_retains_first_meaning (test_settlement.SettlementContract.test_changed_amount_conflicts_and_retains_first_meaning) ... ok
+test_duplicate_once_but_distinct_event_adds_credit (test_settlement.SettlementContract.test_duplicate_once_but_distinct_event_adds_credit) ... ok
+test_new_round_uses_B_and_provider_scoped_ids_coexist (test_settlement.SettlementContract.test_new_round_uses_B_and_provider_scoped_ids_coexist) ... ok
+test_old_event_after_switch_credits_retained_owner (test_settlement.SettlementContract.test_old_event_after_switch_credits_retained_owner) ... ok
+test_unavailable_old_route_holds_until_explicit_retry (test_settlement.SettlementContract.test_unavailable_old_route_holds_until_explicit_retry) ... ok
+test_unknown_local_round_is_quarantined (test_settlement.SettlementContract.test_unknown_local_round_is_quarantined) ... ok
+test_wrong_currency_is_quarantined (test_settlement.SettlementContract.test_wrong_currency_is_quarantined) ... ok
+test_wrong_player_is_quarantined (test_settlement.SettlementContract.test_wrong_player_is_quarantined) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.000s
+
+OK

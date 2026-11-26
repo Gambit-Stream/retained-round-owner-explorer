@@ -1,0 +1,41 @@
+{
+  "schema": "pam-history-demo/1",
+  "synthetic": true,
+  "scope": "Four invented events; not a complete player lifecycle",
+  "event_owners": {
+    "E-301": [
+      "B-A",
+      "P-301",
+      "EUR"
+    ],
+    "E-302": [
+      "B-B",
+      "P-301",
+      "EUR"
+    ],
+    "E-303": [
+      "B-A",
+      "P-301",
+      "EUR"
+    ],
+    "E-304": [
+      "B-B",
+      "P-301",
+      "EUR"
+    ]
+  },
+  "files": {
+    "accounts.csv": {
+      "sha256": "eaf6618f07bb59efa88d4b26f9a23c66949bdc5f562e3e3aa4168347f6e6acd2",
+      "rows": 2
+    },
+    "events.csv": {
+      "sha256": "4603be4c8aabfe439569ae52508e54c590218966579ec9027ba062e336039cbf",
+      "rows": 4
+    },
+    "exceptions.csv": {
+      "sha256": "1159596fbea1d9fb23b56136e219887d2401911fdb0d863c2b95fc757f04c779",
+      "rows": 1
+    }
+  }
+}

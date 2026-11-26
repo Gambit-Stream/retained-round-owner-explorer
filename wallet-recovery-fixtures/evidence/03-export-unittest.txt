@@ -1,0 +1,21 @@
+test_balance_mismatch (test_reader.ExportTests.test_balance_mismatch) ... ok
+test_clean_matches_handwritten_oracle (test_reader.ExportTests.test_clean_matches_handwritten_oracle) ... ok
+test_decimal_amount (test_reader.ExportTests.test_decimal_amount) ... ok
+test_duplicate_account (test_reader.ExportTests.test_duplicate_account) ... ok
+test_duplicate_event (test_reader.ExportTests.test_duplicate_event) ... ok
+test_duplicate_exception (test_reader.ExportTests.test_duplicate_exception) ... ok
+test_equal_totals_wrong_owners (test_reader.ExportTests.test_equal_totals_wrong_owners) ... ok
+test_exception_points_to_other_owner (test_reader.ExportTests.test_exception_points_to_other_owner) ... ok
+test_hash_mismatch (test_reader.ExportTests.test_hash_mismatch) ... ok
+test_missing_event (test_reader.ExportTests.test_missing_event) ... ok
+test_missing_file (test_reader.ExportTests.test_missing_file) ... ok
+test_naive_time (test_reader.ExportTests.test_naive_time) ... ok
+test_orphan_event (test_reader.ExportTests.test_orphan_event) ... ok
+test_orphan_exception_stays_visible (test_reader.ExportTests.test_orphan_exception_stays_visible) ... ok
+test_row_count (test_reader.ExportTests.test_row_count) ... ok
+test_schema_mismatch (test_reader.ExportTests.test_schema_mismatch) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.036s
+
+OK
